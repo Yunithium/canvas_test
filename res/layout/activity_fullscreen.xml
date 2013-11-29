@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/painting_place"
+    android:theme="@android:style/Theme.NoTitleBar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FullscreenActivity" >
+
+        <LinearLayout
+            android:id="@+id/buttons_control"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="decreaseBounce"
+                android:text="@string/speedMinus" />
+
+            <Button
+                android:id="@+id/dummy_button1"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="increaseBounce"
+                android:text="@string/speedPlus" />
+
+            <Button
+                android:id="@+id/dummy_button2"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="decreaseSpeed"
+                android:text="@string/speedMinus" />
+
+            <Button
+                android:id="@+id/dummy_button3"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="increaseSpeed"
+                android:text="@string/speedPlus" />
+        </LinearLayout>
+
+</FrameLayout>
